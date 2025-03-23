@@ -3,7 +3,7 @@ const axios = require('axios'); // For making HTTP requests to GitHub API
 const fs = require('fs'); // For saving downloaded files
 
 // GitHub repository details
-const REPO_OWNER = 'itx-alii-raza';
+const REPO_OWNER = 'itx-ali-raza';
 const REPO_NAME = 'ALI-MD';
 const PLUGINS_FOLDER = 'plugins'; // Folder where plugins are stored
 
@@ -38,7 +38,7 @@ async (conn, mek, m, { from, reply }) => {
         pluginListCache = plugins;
 
         // Construct a list of plugins
-        let pluginList = "📂 *ALI MD V1 PLUGINS:*\n\n";
+        let pluginList = "📂 *ALI MD PLUGINS:*\n\n";
         plugins.forEach((plugin, index) => {
             pluginList += `${index + 1}. ${plugin.name}\n> `; // Add plugin name to the list
         });
@@ -72,7 +72,7 @@ async (conn, mek, m, { from, reply, args, senderNumber }) => {
         // If the user is replying to a message, check if it's a number
         if (m.quoted && m.quoted.key.fromMe) {
             const quotedText = m.quoted.text;
-            if (/📂 \*ALI MD V1 PLUGINS:\*/i.test(quotedText)) {
+            if (/📂 \*ALI MD PLUGINS:\*/i.test(quotedText)) {
                 // Extract the number from the reply
                 const fileNumber = parseInt(pluginName);
                 if (!isNaN(fileNumber) && fileNumber > 0 && fileNumber <= pluginListCache.length) {
@@ -99,7 +99,7 @@ async (conn, mek, m, { from, reply, args, senderNumber }) => {
 
         // Status message with image and caption
         const statusMessage = {
-            image: { url: `https://i.ibb.co/8Dzbtwj2/mrfrankofc.jpg` }, // Replace with your image URL
+            image: { url: `https://cdn.ironman.my.id/i/2du3i5.jpg` }, // Replace with your image URL
             caption: `*Successfully downloaded ${pluginName} ✅*`,
             contextInfo: {
                 mentionedJid: [senderNumber],
@@ -107,7 +107,7 @@ async (conn, mek, m, { from, reply, args, senderNumber }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363318387454868@newsletter',
-                    newsletterName: '𝐀ɭι̇ι̇ 𝐌Ɗ 🍁',
+                    newsletterName: '𝐀ɭīī 𝐌Ɗ 𝐒ʊ̊𝐏𝐏๏፝֟ɼʈ 🍁',
                     serverMessageId: 143
                 }
             }
