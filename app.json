@@ -102,7 +102,7 @@
       "value": "false"
     }, 
     
-    "ANTI_LINK_KICK": {
+    "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
       "required": false,
       "value": "false"
