@@ -55,7 +55,7 @@ console.log(e)
 
 cmd({
     pattern: "darama",
-    alias: ["video2"],
+    alias: ["video3"],
     desc: "To download videos.",
     react: "🎥",
     category: "download",
