@@ -1,4 +1,4 @@
-const { cmd } = require("../command"); const yts = require("yt-search"); const axios = require("axios");
+/*const { cmd } = require("../command"); const yts = require("yt-search"); const axios = require("axios");
 
 cmd({ pattern: "ong", alias: ["musiic", "mp04"], desc: "Search and download a song from YouTube", category: "media", react: "🎵", filename: __filename }, async (conn, mek, m, { from, args, q, reply }) => { try { if (!q) return reply("Please provide a song name or YouTube link to download.");
 
@@ -57,3 +57,4 @@ let videoUrl = q;
 }
 
 });
+/*
