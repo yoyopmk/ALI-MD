@@ -16,7 +16,7 @@
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "𓆩ု᪳𝐀𝐋𝐈-𝐌𝐃ှ᪳𓆪"
+      "value": "𓆩ု᪳𝐀ɭīī 𝐌Ɗှ᪳𓆪"
     }, 
       
     "PREFIX": {
@@ -86,14 +86,14 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "𓆩ု᪳𝐀𝐋𝐈-𝐌𝐃ှ᪳𓆪"
+      "value": "𓆩ု᪳𝐀ɭīī 𝐌Ɗှ᪳𓆪"
 
       }, 
     
     "ALIVE_IMG": {
       "description": "put here the bot Menu url if you don't have you can use this public url.",
       "required": true,
-      "value": "https://cdn.ironman.my.id/i/2du3i5.jpg" 
+      "value": "https://files.catbox.moe/6ku0eo.jpg" 
       },
 
     "DELETE_LINK": {
