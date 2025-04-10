@@ -5,8 +5,8 @@ const { ytsearch, ytmp3, ytmp4 } = require('@dark-yasiya/yt-dl.js');
 // video
 
 cmd({ 
-    pattern: "mp4", 
-    alias: ["video", "ytv"], 
+    pattern: "mp42", 
+    alias: ["video2", "ytv2"], 
     react: "🎥", 
     desc: "Download Youtube song", 
     category: "main", 
@@ -66,8 +66,8 @@ cmd({
 // play
 
 cmd({ 
-     pattern: "mp3", 
-     alias: ["yta", "play"], 
+     pattern: "mp32", 
+     alias: ["yta2", "play"], 
      react: "🎧", 
      desc: "Download Youtube song",
      category: "main", 
