@@ -1,16 +1,15 @@
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
-
 const fetch = require('node-fetch');
 const config = require('../config');    
 const { cmd } = require('../command');
 
 cmd({
-    pattern: "script",
-    alias: ["repo", "sc", "info"],
+    pattern: "repo",
+    alias: ["sc", "script", "info"],
     desc: "Fetch information about a GitHub repository.",
-    react: "🎗️",
+    react: "📂",
     category: "info",
     filename: __filename,
 },
