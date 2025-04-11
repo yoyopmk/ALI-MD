@@ -1,17 +1,21 @@
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
 const fetch = require('node-fetch');
 const config = require('../config');    
 const { cmd } = require('../command');
 
 cmd({
-    pattern: "repo",
-    alias: ["sc", "script", "info"],
+    pattern: "script",
+    alias: ["repo", "sc", "info"],
     desc: "Fetch information about a GitHub repository.",
-    react: "📂",
+    react: "🎗️",
     category: "info",
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/itx-ali-raza/ALI-MD';
+    const githubRepoURL = 'https://github.com/itx-alii-raza/ALI-MD';
 
     try {
         // Extract username and repo name from the URL
@@ -27,19 +31,44 @@ async (conn, mek, m, { from, reply }) => {
         const repoData = await response.json();
 
         // Format the repository information
-        const formattedInfo = `*BOT NAME:*\n> ${repoData.name}\n\n*OWNER NAME:*\n> ${repoData.owner.login}\n\n*STARS:*\n> ${repoData.stargazers_count}\n\n*FORKS:*\n> ${repoData.forks_count}\n\n*GITHUB LINK:*\n> ${repoData.html_url}\n\n*DESCRIPTION:*\n> ${repoData.description || 'No description'}\n\n*Don't Forget To Star and Fork Repository*\n\n> *© Powered By JawadTechX 🖤*`;
+        const formattedInfo = `*𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐄𝐑𝐄 𝐀𝐋𝐈-𝐌𝐃 𝐖.𝐀 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑!😇👑* 
+
+> *sɪᴍᴘʟᴇ, ɪᴄʏ, ᴄᴏʟᴅ  & ʀɪᴄʜ ʟᴏᴀᴅᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ғᴇᴀᴛᴜʀᴇs, ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ sᴛᴀʀ & ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ🌟🍴*
+
+*\`REPO LINK:\`📮*
+> https://github.com/itx-alii-raza/ALI-MD/fork
+
+*\`BOT SUPPORT GC:\`🪀*
+> https://tinyurl.com/2acmqaqz
+
+*\`BOT NAME:\`🤖*
+> ${repoData.name}
+
+*\`OWNER NAME:\`👨‍💻*
+> 𝐀ɭīī 𝐈ƞ̄x̷īīɖ𝛆̽
+
+*\`STARS:\`🌟*
+> ${repoData.stargazers_count}
+
+*\`FORKS:\`🍴*
+> ${repoData.forks_count}
+
+*\`DESCRIPTION:\`📑*
+> ${repoData.description || 'No description'}\n
+──────────────────
+\n> *© POWERED BY ALI* 🎐`;
 
         // Send an image with the formatted info as a caption and context info
         await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/juroe8.jpg` },
+            image: { url: `https://files.catbox.moe/6ku0eo.jpg` },
             caption: formattedInfo,
             contextInfo: { 
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363354023106228@newsletter',
-                    newsletterName: 'JawadTechX',
+                    newsletterJid: '120363318387454868@newsletter',
+                    newsletterName: '𝐀ɭīī 𝐌Ɗ 𝚩❍𝐓 𝐒ʊ̊𝐏𝐏๏፝֟ɼʈ  ⃪🤖͎᪳᪳𝆺𝅥',
                     serverMessageId: 143
                 }
             }
@@ -47,16 +76,16 @@ async (conn, mek, m, { from, reply }) => {
 
         // Send the audio file with context info
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/XdTechPro/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
+            audio: { url: 'https://files.catbox.moe/cup6rc.mp3' },
             mimetype: 'audio/mp4',
             ptt: true,
             contextInfo: { 
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
-                isForwarded: true,
+                isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363354023106228@newsletter',
-                    newsletterName: 'JawadTechX',
+                    newsletterJid: '120363318387454868@newsletter',
+                    newsletterName: '𝐀ɭīī 𝐌Ɗ 𝚩❍𝐓 𝐒ʊ̊𝐏𝐏๏፝֟ɼʈ  ⃪🤖͎᪳᪳𝆺𝅥',
                     serverMessageId: 143
                 }
             }
@@ -67,3 +96,4 @@ async (conn, mek, m, { from, reply }) => {
         reply("Sorry, something went wrong while fetching the repository information. Please try again later.");
     }
 });
+                
