@@ -4,7 +4,7 @@
   "description": "A WhatsApp Bot Created By ALI",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name ALI-MD",
+    "start": "npm i pm2 -g && pm2 start index.js --deep-monitoring --attach --name ALI-MD",
     "stop": "pm2 stop ALI-MD",
     "restart": "pm2 restart ALI-MD"
   },
